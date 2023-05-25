@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>JESHOES</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
 </head>
 <body>
     <header>
         <img src="images/image-removebg(6).png" class="logo" alt="nome">
+        
+        <div id="search-box">
+            <input type="text" class="search-txt" placeholder="">
+        </div>
         <div id="firstnav">
-            <ul >
+            <ul>
                 <li><a href="#status">HOME</a></li>
                 <li><a href="#professional">PRODUCTS</a></li>
                 <li><a href="#projects">ABOUT US</a></li>
                 <li><a href="#about">CONTACT</a></li>
+                <li id="carrinhoIMG"><a href="cart.html"><i class='bx bx-cart icone'></i></a></li>
+
             </ul>
         </div>
     </header>
     <main>
-        <img src="./images/thumb-tenis.jpg" alt="profile">
-
+        <section id="hero">
+            <h4>Nike Weekend</h4>
+            <h2>Discounts up to 70%</h2>
+            <h1>In AIRMAX and AIR FORCE'S!</h1>
+            <p>Check it out by clicking the button below</p>
+            <button>Learn More</button>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
