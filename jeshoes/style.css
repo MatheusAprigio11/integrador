@@ -35,9 +35,17 @@ p{
     margin: 15px 0 20px 0;
 }
 
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
 body {
+    background-color: #ebebeb;
     width:100%;
-    height:100%;
 }
 
 header{
@@ -49,6 +57,10 @@ header{
     justify-content: space-between;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header img{
@@ -89,24 +101,75 @@ header img{
 }
 
 #hero{
-    background-image: url("images/thumb-tenis-rem-removebg-preview.png");
-    background-size: contain;
+    background-image: url("images/hero.png");
+    background-size:cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-    background-position: top 25% right 0;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    font-family: 'Lexend', sans-serif;
 }
 
 #hero h4{
     padding-bottom: 15px;
+    font-size: 3vw;
 }
 
 #hero h1{
-    color: #007BD3
+    color: #007BD3;
+    font-size: 4vw;
 }
 
+#hero button{
+    border-radius: 8px;
+    color: #007BD3;
+    font-family: 'Lexend', sans-serif;
+    border: none;
+    background-color: #cce8fc;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 2vw;
+    background-repeat: no-repeat;
+    margin-top: 46vh;
+    margin-left: 10px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    font-family: 'Lexend', sans-serif;
+    color: #007BD3;
+    background-color: #d6d6d6;
+}
