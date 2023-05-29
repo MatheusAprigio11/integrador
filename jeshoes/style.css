@@ -67,7 +67,6 @@ header img{
     height: 4.5rem;
 }
 
-
 #firstnav ul{
     display: flex;
     align-items: center;
@@ -100,11 +99,25 @@ header img{
     
 }
 
+@media(max-width: 1336px){
+
+    #firstnav li{
+        padding: 0 10px;
+    }
+
+    #firstnav li a{
+        font-size: 14px;
+    }
+
+}
+
 #hero{
+    max-width: 1440px;;
+    margin: 0px auto;
     background-image: url("images/hero.png");
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     padding: 0 80px;
     display: flex;
@@ -114,51 +127,30 @@ header img{
     font-family: 'Lexend', sans-serif;
 }
 
-#hero h4{
-    padding-bottom: 15px;
-    font-size: 3vw;
-}
-
-#hero h1{
-    color: #007BD3;
-    font-size: 4vw;
-}
-
-#hero button{
-    border-radius: 8px;
-    color: #007BD3;
-    font-family: 'Lexend', sans-serif;
-    border: none;
-    background-color: #cce8fc;
-    cursor: pointer;
-    font-weight: 900;
-    font-size: 2vw;
-    background-repeat: no-repeat;
-    margin-top: 46vh;
-    margin-left: 10px;
-}
 
 #feature{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 
 }
 
 #feature .fe-box{
     width: 180px;
+    height: auto;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cce7d0;
+    border: 1px solid #6e6e6e;
     border-radius: 4px;
-    margin: 15px 0;
+    margin: 12px 123px;
 }
 
 #feature .fe-box:hover{
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }
+
 #feature .fe-box img{
     width: 100%;
     margin-bottom: 10px;
@@ -172,4 +164,158 @@ header img{
     font-family: 'Lexend', sans-serif;
     color: #007BD3;
     background-color: #d6d6d6;
+}
+
+.categories{
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 33.33%;
+    border: 3px solid #ebebeb;
+    box-sizing: border-box;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-item-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.category-item-inner > div{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feature-products{
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding-bottom: 2em;
+}
+
+.feature-products-title{
+    text-align: center;
+}
+
+.feature-products-item{
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.feature-products-item-image{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-products-item > .title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feature-products-item > .description{
+    color: #220061;
+}
+
+.feature-products-item > .price{
+    font-style: italic;
+}
+
+#buttonItem{
+    outline: none;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0e005c;
+    padding-top: 1em;
+}
+
+footer .fot-Logo{
+    margin-bottom: 30px;
+    height: 4rem;
+}
+
+footer h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+
+}
+
+@media(max-width: 1000px){
+    .category-item{
+        min-width: 50%;
+    }
+    .feature-products{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width: 800px){
+    .category-item{
+        min-width: 100%;
+    }
+    .feature-products{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media (max-width: 1439px){
+    
+    #hero{
+        width: 100%;
+        height: 75vh;
+        background-size: cover;
+    }
+    
+
+    #feature .fe-box{
+        margin: 12px 40px
+    }
 }
