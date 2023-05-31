@@ -39,6 +39,10 @@ p{
     margin: 15px 0 20px 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .section-p1{
     padding: 40px 80px;
 }
@@ -50,11 +54,10 @@ p{
 body {
     background-color: #ebebeb;
     width:100%;
-}
-
-main{
     font-family: 'Lexend', sans-serif;
 }
+
+   
 
 /* .container{
     max-width: 1068px;
@@ -353,9 +356,11 @@ header img{
 
 .categories{
     max-width: 1000px;
+    color: #fff;
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 .category-item{
@@ -451,18 +456,19 @@ footer .fot-Logo{
 footer h4{
     font-size: 16px;
     padding-bottom: 20px;
-
+    color: #fff;
 }
 
 footer p{
     font-size: 15px;
     margin: 0 0 8px 0;
+    color: #fff;
 }
 
 footer .copyright{
     width: 100%;
     text-align: center;
-
+    color: #fff;
 }
 
 @media(max-width: 1000px){
