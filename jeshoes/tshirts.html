@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-        <a href="http://127.0.0.1:5500/index.html"><img src="images/logo.png" class="logo" alt="nome"></a>
+        <a href="http://127.0.0.1:5500/index.html"><img src="images/logoB.png" class="logo" alt="nome"></a>
         
         <div id="firstnav">
             <ul>
                 <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
                 <li><a href="#categ">PRODUCTS</a></li>
-                <li><a href="#projects">ABOUT US</a></li>
+                <li><a href="#open-modal" id="open-modal">ABOUT US</a></li>
                 <li><a href="#about">CONTACT</a></li>
                 <li><i class='bx bx-cart icone' id="cart-icon"></i></li>
             </ul>
@@ -33,6 +33,20 @@
             </div>
         </div>
     </header>
+
+    <section class="modalT">
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>ABOUT US</h2>
+                <button id="close-modal">Close</button>
+            </div>
+            <div id="modal-body">
+                <p>We are a newcomer to the market, in which we are only selling original products. Our main brands worked on are Nike and Lacoste, but we also have other affiliated products.</p>
+                <p>Company constituted by: Matheus Aprigio.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="categ" class="categories">
         <div class="category-item" 
@@ -71,99 +85,99 @@
 
             <div class="product-box">
                 <img src="images/products/tshirts/categorieTShirtO.png" alt="" class="product-img">
-                <h2 class="product-title">AIR FORCE 1</h2>
-                <span class="price">$900</span>
+                <h2 class="product-title">T-SHIRT RED NIKE</h2>
+                <span class="price">$35.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/drifitBranca.jpg" alt="" class="product-img">
-                <h2 class="product-title">AIR FORCE 1 BLACK</h2>
-                <span class="price">$999</span>
+                <h2 class="product-title">T-SHIRT NIKE DRI-FIT WHITE</h2>
+                <span class="price">$94.80</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/drifitPreta.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX 90 WHITE</h2>
-                <span class="price">$854.11</span>
+                <h2 class="product-title">T-SHIRT NIKE DRI-FIT BLACK</h2>
+                <span class="price">$95.80</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/PoloBrancaNike.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX 90 BLUE</h2>
-                <span class="price">$854.11</span>
+                <h2 class="product-title">T-SHIRT WHITE NIKE SWOOSH</h2>
+                <span class="price">$80.99</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             
             <div class="product-box">
                 <img src="images/products/tshirts/poloLala.jpg" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX EXCEE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT LACOSTE BLACK</h2>
+                <span class="price">$110.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             
             <div class="product-box">
                 <img src="images/products/tshirts/poloLalaAzul.jpg" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX EXCEE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT LACOSTE LIGHT BLUE</h2>
+                <span class="price">$100.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/PoloLalaAzulAmarelo.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX EXCEE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT LACOSTE BLUE&YELLOW</h2>
+                <span class="price">$89.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/bluenike.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX OFFWHITE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT LIGHT BLUE NIKE</h2>
+                <span class="price">$57.99</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/VASCAO.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX TN</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT "VASCÃO" 23</h2>
+                <span class="price">$97.98</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/PONTEPRETA.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRFORCE RETRO RED</h2> 
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT PONTE PRETA 23</h2> 
+                <span class="price">$89.99</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/SPFC.png" alt="" class="product-img">
-                <h2 class="product-title">AIRFORCE Lv8</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT SPFC 23 M1</h2>
+                <span class="price">$129.99</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/MANGALONGANIK.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRFORCE PYTHON</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT LONG SLEEVE NIKE</h2>
+                <span class="price">$99.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/tshirts/nikepret.webp" alt="" class="product-img">
-                <h2 class="product-title">NIKE TN GRADIENT</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">T-SHIRT BLACK NIKE SWOOSH</h2>
+                <span class="price">$80.99</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
         </div>
     </section>
     <footer>
         <div class="col">
-            <img class="fot-Logo" src="images/logo.png" alt="">
+            <img class="fot-Logo" src="images/logoB.png" alt="">
             <h4>Contact</h4>
             <p><strong>Address:</strong>901, Street of imprensa, Castle Mount, San Francisco.</p>
             <p><strong>Phone:</strong>(19) 99155-0098</p>

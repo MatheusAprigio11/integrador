@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-        <a href="http://127.0.0.1:5500/index.html"><img src="images/logo.png" class="logo" alt="nome"></a>
+        <a href="http://127.0.0.1:5500/index.html"><img src="images/logoB.png" class="logo" alt="nome"></a>
         
         <div id="firstnav">
             <ul>
                 <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
                 <li><a href="#categ">PRODUCTS</a></li>
-                <li><a href="#projects">ABOUT US</a></li>
+                <li><a href="#open-modal" id="open-modal">ABOUT US</a></li>
                 <li><a href="#about">CONTACT</a></li>
                 <li><i class='bx bx-cart icone' id="cart-icon"></i></li>
             </ul>
@@ -33,6 +33,19 @@
             </div>
         </div>
     </header>
+    <section class="modalT">
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>ABOUT US</h2>
+                <button id="close-modal">Close</button>
+            </div>
+            <div id="modal-body">
+                <p>We are a newcomer to the market, in which we are only selling original products. Our main brands worked on are Nike and Lacoste, but we also have other affiliated products.</p>
+                <p>Company constituted by: Matheus Aprigio.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="categ" class="categories">
         <div class="category-item" 
@@ -70,137 +83,137 @@
         <div class="shop-content">
 
             <div class="product-box">
-                <img src="images/products/shoes/AirForce1.webp" alt="" class="product-img">
+                <img src="images/products/shoes/AirForce1.png" alt="" class="product-img">
                 <h2 class="product-title">AIR FORCE 1</h2>
-                <span class="price">$900</span>
+                <span class="price">$449.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
-                <img src="images/products/shoes/AirForceBlack.webp" alt="" class="product-img">
+                <img src="images/products/shoes/AirForceBlack.png" alt="" class="product-img">
                 <h2 class="product-title">AIR FORCE 1 BLACK</h2>
-                <span class="price">$999</span>
+                <span class="price">$429.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/airMax90White.webp" alt="" class="product-img">
                 <h2 class="product-title">AIRMAX 90 WHITE</h2>
-                <span class="price">$854.11</span>
+                <span class="price">$328.97</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/airMax90blue.webp" alt="" class="product-img">
                 <h2 class="product-title">AIRMAX 90 BLUE</h2>
-                <span class="price">$854.11</span>
+                <span class="price">$329.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             
             <div class="product-box">
                 <img src="images/products/shoes/airMaxExcee.jpg" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX EXCEE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">AIRMAX EXCEE GREEN</h2>
+                <span class="price">$200.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             
             <div class="product-box">
                 <img src="images/products/shoes/exceered.webp
                 " alt="" class="product-img">
-                <h2 class="product-title">AIRMAX EXCEE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">AIRMAX EXCEE RED</h2>
+                <span class="price">$210.50</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/exceeWBlue.webp" alt="" class="product-img">
-                <h2 class="product-title">AIRMAX EXCEE</h2>
-                <span class="price">$25</span>
+                <h2 class="product-title">AIRMAX BLUE&WHITE</h2>
+                <span class="price">$205.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/AirMaxOffWhiteT.png" alt="" class="product-img">
                 <h2 class="product-title">AIRMAX OFFWHITE</h2>
-                <span class="price">$25</span>
+                <span class="price">$427.80</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/airMaxTn.webp" alt="" class="product-img">
                 <h2 class="product-title">AIRMAX TN</h2>
-                <span class="price">$25</span>
+                <span class="price">$789.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/LowRetroRed.webp" alt="" class="product-img">
                 <h2 class="product-title">AIRFORCE RETRO RED</h2> 
-                <span class="price">$25</span>
+                <span class="price">$450.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/Lv8.webp" alt="" class="product-img">
                 <h2 class="product-title">AIRFORCE Lv8</h2>
-                <span class="price">$25</span>
+                <span class="price">$469.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/PythonAndZ.webp" alt="" class="product-img">
                 <h2 class="product-title">AIRFORCE PYTHON</h2>
-                <span class="price">$25</span>
+                <span class="price">$439.80</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
 
             <div class="product-box">
                 <img src="images/products/shoes/tnGradient.webp" alt="" class="product-img">
                 <h2 class="product-title">NIKE TN GRADIENT</h2>
-                <span class="price">$25</span>
+                <span class="price">$790.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             <div class="product-box">
                 <img src="images/products/shoes/tnPLus.webp" alt="" class="product-img">
                 <h2 class="product-title">NIKE TN PLUS</h2>
-                <span class="price">$25</span>
+                <span class="price">$790.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             <div class="product-box">
                 <img src="images/products/shoes/tnwhite.webp" alt="" class="product-img">
                 <h2 class="product-title">NIKE TN WHITE</h2>
-                <span class="price">$25</span>
+                <span class="price">$850.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             <div class="product-box">
                 <img src="images/products/shoes/TNBLACKBLUE.webp" alt="" class="product-img">
                 <h2 class="product-title">NIKE TN BLACK/BLUE</h2>
-                <span class="price">$25</span>
+                <span class="price">$839.90</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             <div class="product-box">
-                <img src="images/products/shoes/tnpink.webp" alt="" class="product-img">
+                <img src="images/products/shoes/tnpink.png" alt="" class="product-img">
                 <h2 class="product-title">NIKE TN PINK</h2>
-                <span class="price">$25</span>
+                <span class="price">$850.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             <div class="product-box">
                 <img src="images/products/shoes/dunk black.webp" alt="" class="product-img">
                 <h2 class="product-title">NIKE DUNK BLACK</h2>
-                <span class="price">$25</span>
+                <span class="price">$360.00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
             <div class="product-box">
                 <img src="images/products/shoes/jordan 1 retro.jpg" alt="" class="product-img">
                 <h2 class="product-title">AIR JORDAN 1 RETRO</h2>
-                <span class="price">$25</span>
+                <span class="price">$1000,00</span>
                 <i class="bx bx-shopping-bag add-cart"></i>
             </div>
         </div>
     </section>
     <footer>
         <div class="col">
-            <img class="fot-Logo" src="images/logo.png" alt="">
+            <img class="fot-Logo" src="images/logoB.png" alt="">
             <h4>Contact</h4>
             <p><strong>Address:</strong>901, Street of imprensa, Castle Mount, San Francisco.</p>
             <p><strong>Phone:</strong>(19) 99155-0098</p>
