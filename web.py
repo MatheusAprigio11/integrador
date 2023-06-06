@@ -2,13 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 import pandas as pd
-marcas_digitadas = []
+import inquirer
 
 class Web:
-    def __init__(self):
-        # self.marca = marca
-        self.site = f'https://matheusaprigio11.github.io/jeshoes/shoes.html'
-        # marcas_digitadas.append(marca)
+    def __init__(self, product):
+        self.product = product
+        self.site = f'http://localhost/aprigio/{product}.html'
         self.map = {
             "nome": {
                 'xpath': '/html/body/section[3]/div/div[%desc%]/h2'
@@ -19,8 +18,9 @@ class Web:
         }
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
-        self.abrir_site()
-    def abrir_site(self):
+        self.abrir_site(product)
+
+    def abrir_site(self, product):
         self.driver.get(self.site)
         sleep(5)
         results = []
@@ -32,6 +32,16 @@ class Web:
 
             print(f"{legend}, {valor}")
         dataframe = pd.DataFrame(results)
-        dataframe.to_excel('./shoes.xlsx')
+        dataframe.to_excel(f'./{product}.xlsx')
 
-f = Web()
+
+products = ["shoes", "caps", "tshirts"]
+
+prodc_selected = inquirer.prompt([
+    inquirer.List('product',
+                    message="||SELECT THE PRODUCT THAT YOUU WANT TO EXPORT||",
+                    choices=[*products],
+                    ),
+])
+print(prodc_selected['product'])
+f = Web(prodc_selected['product'])
