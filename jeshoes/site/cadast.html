@@ -1,0 +1,141 @@
+<html>
+    <head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+
+    <!-- Adicionando Javascript -->
+    <script>
+    
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('rua').value=("");
+            document.getElementById('bairro').value=("");
+            document.getElementById('cidade').value=("");
+            document.getElementById('uf').value=("");
+            document.getElementById('ibge').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('rua').value=(conteudo.logradouro);
+            document.getElementById('bairro').value=(conteudo.bairro);
+            document.getElementById('cidade').value=(conteudo.localidade);
+            document.getElementById('uf').value=(conteudo.uf);
+            document.getElementById('ibge').value=(conteudo.ibge);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('rua').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('uf').value="...";
+                document.getElementById('ibge').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+    </script>
+    </head>
+
+    <body>
+        <header>
+            <a href="/site/index.html"><img src="images/logoB.png" class="logo" alt="nome"></a>
+        
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div id="firstnav">
+            <ul class="nav-list">
+                <li><a href="/site/index.html">HOME</a></li>
+                <li><a href="#categ">PRODUCTS</a></li>
+                <li><a href="#open-modal" id="open-modal">ABOUT US</a></li>
+                <li><a href="#contc">CONTACT</a></li>
+                <li><i class='bx bx-cart icone' id="cart-icon"></i></li>
+            </ul>
+            <div class="cart">
+                <div class="cart-title">Your Cart</div>
+                <div class="cart-content">
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>  
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+        </header>
+        
+    <!-- Inicio do formulario -->
+    <section class="adTitle"><h1> SIGN IN YOUR ADDRES</h1></section>
+      <form method="get" action=".">
+        <div class="adres">
+            <label class="labels" >Cep:</label>
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                onblur="pesquisacep(this.value);" /><br />
+            <label class="labels" >Rua:</label>
+            <input name="rua" type="text" id="rua" size="60" readonly="readonly"/><br />
+            <label class="labels" >Bairro:</label>
+            <input name="bairro" type="text" id="bairro" size="40" readonly="readonly" /><br />
+            <label class="labels" >Cidade:</label>
+            <input name="cidade" type="text" id="cidade" size="40" readonly="readonly" /><br />
+            <label class="labels" >Estado:</label>
+            <input name="uf" type="text" id="uf" size="2" readonly="readonly"/><br />
+            <label class="labels" >IBGE:</label>
+            <input name="ibge" type="text" id="ibge" size="8" readonly="readonly" /><br />
+        </div>  
+    </form>
+    <div class="btn-alert">
+        <button onclick="myFunction()">Save Addres</button>
+    </div>
+    <script>
+    function myFunction() {
+    alert("Addres Saved");
+    }
+    </script>
+    </body>
+
+    </html>

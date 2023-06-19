@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JESHOES</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+</head>
+<body>
+    <header>
+        <a href="/site/index.html"><img src="images/logoB.png" class="logo" alt="nome"></a>
+        
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div id="firstnav">
+            <ul class="nav-list">
+                <li><a href="/site/index.html">HOME</a></li>
+                <li><a href="#categ">PRODUCTS</a></li>
+                <li><a href="#open-modal" id="open-modal">ABOUT US</a></li>
+                <li><a href="#contc">CONTACT</a></li>
+                <li><i class='bx bx-cart icone' id="cart-icon"></i></li>
+            </ul>
+            <div class="cart">
+                <div class="cart-title">Your Cart</div>
+                <div class="cart-content">
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>  
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <div class="list"></div>
+    <main>
+        <section class="modalT">
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+                <div class="modal-header">
+                    <h2>ABOUT US</h2>
+                    <button id="close-modal">Close</button>
+                </div>
+                <div id="modal-body">
+                    <p>We are a newcomer to the market, in which we are only selling original products. Our main brands worked on are Nike and Lacoste, but we also have other affiliated products.</p>
+                    <p>Company constituted by: Matheus Aprigio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero">
+        </section>
+
+        <section id="feature" class="section-p1">
+            <div class="fe-box">
+                <img src="images/delivery.png" alt="">
+                <h6>Fast and free delivery</h6>
+            </div>
+
+            <div class="fe-box">
+                <img src="images/shopO.png" alt="">
+                <h6>Safety Shop</h6>
+            </div>
+
+            <div class="fe-box">
+                <img src="images/verifyO.png" alt="">
+                <h6>Original Products</h6>
+            </div>
+        </section>
+
+        <div class="title-ca">
+            <h2>CATEGORIES</h2>
+        </div>
+        <section id="categ" class="categories">
+            <div class="category-item" 
+                style="background-image: url('images/categories/categorieShoes.jpg');"
+                >
+                <div class="category-item-inner">
+                    <div>
+                        <a href="/site/shoes.html">Shoes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item"
+                 style="background-image: url('images/categories/categorieCapO.png');"
+                 >
+                 <div class="category-item-inner">
+                    <div>
+                        <a href="/site/caps.html">Caps</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item" 
+                style="background-image: url('images/categories/categorieTShirt.jpg');"
+                >
+                <div class="category-item-inner">
+                    <div>
+                    <a href="/tshirts.html">Tshirts</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-products">
+            <h2 class="section-title">Shop Products</h2>
+            
+            <div class="shop-content">
+
+                <div class="product-box">
+                    <img src="images/products/shoes/AirForce1.png" alt="" class="product-img">
+                    <h2 class="product-title">AIR FORCE 1</h2>
+                    <span class="price">$449.90</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/shoes/AirForceBlack.png" alt="" class="product-img">
+                    <h2 class="product-title">AIR FORCE 1 BLACK</h2>
+                    <span class="price">$429.90</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/shoes/airMax90White.webp" alt="" class="product-img">
+                    <h2 class="product-title">AIRMAX 90 WHITE</h2>
+                    <span class="price">$328.97</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/shoes/airMaxExcee.jpg" alt="" class="product-img">
+                    <h2 class="product-title">AIRMAX EXCEE GREEN</h2>
+                    <span class="price">$200.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                
+                <div class="product-box">
+                    <img src="images/products/shoes/PythonAndZ.webp" alt="" class="product-img">
+                    <h2 class="product-title">AIRMAX OFFWHITE</h2>
+                    <span class="price">$427.80</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/shoes/airMaxTn.webp" alt="" class="product-img">
+                    <h2 class="product-title">AIRMAX TN</h2>
+                    <span class="price">$789.90</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/tshirts/poloLala.jpg" alt="" class="product-img">
+                    <h2 class="product-title">T-SHIRT LACOSTE BLACK</h2> 
+                    <span class="price">$110.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/tshirts/PoloLalaAzulAmarelo.webp" alt="" class="product-img">
+                    <h2 class="product-title">T-SHIRT LACOSTE BLUE&YELLOW</h2>
+                    <span class="price">$89.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/tshirts/drifitBranca.jpg" alt="" class="product-img">
+                    <h2 class="product-title">T-SHIRT NIKE DRI-FIT WHITE</h2>
+                    <span class="price">$94.80</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <div class="product-box">
+                    <img src="images/products/caps/boneNikePreto.jpg" alt="" class="product-img">
+                    <h2 class="product-title">NIKE BLACK CAP</h2>
+                    <span class="price">$24.50</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/products/caps/nikePretoVerm.png" alt="" class="product-img">
+                    <h2 class="product-title">NIKE RED&BLUE CAP</h2>
+                    <span class="price">$24.50</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <div class="product-box">
+                    <img src="images/products/caps/lacosteAzul.png" alt="" class="product-img">
+                    <h2 class="product-title">LACOSTE BLUE CAP</h2>
+                    <span class="price">$32.90</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="col" id="contc">
+                <img class="fot-Logo" src="images/logoB.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>901, Street of imprensa, Castle Mount, San Francisco.</p>
+                <p><strong>Phone:</strong>(19) 99155-0098</p>
+                <p><strong>Hours:</strong> 08h00AM - 18h00PM</p>
+            </div>
+            <div class="col">
+                <h4>About us</h4>
+                <p>A E-Commerce made by Matheus Aprigio, for the purpose of selling shoes, t-shirts and caps.</p> 
+                <p>all the products are originals of fabric, so it's a safety buy-shop!</p>
+            </div>
+            <div class="copyright">
+                <p>© 2023, 1DSM-B - Aprigio - Ecommerce</p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
