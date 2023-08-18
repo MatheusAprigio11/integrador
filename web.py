@@ -39,7 +39,7 @@ products = ["shoes", "caps", "tshirts"]
 
 prodc_selected = inquirer.prompt([
     inquirer.List('product',
-                    message="||SELECT THE PRODUCT THAT YOUU WANT TO EXPORT||",
+                    message="||SELECT THE PRODUCT THAT YOU WANT TO EXPORT||",
                     choices=[*products],
                     ),
 ])
